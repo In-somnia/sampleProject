@@ -1,22 +1,31 @@
-# Compiled class file
+# IntelliJ IDEA and Gradle files #
+/.idea/
+/gradle/
+.gradle/
+*.iml
+target/
+
 *.class
 
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# Back-end files #
+/server/build/
 
 # Package Files #
 *.jar
 *.war
 *.ear
-*.zip
-*.tar.gz
-*.rar
+
+# Front-end files #
+/client/.tmp/
+/client/coverage/
+/client/node_modules/
+/client/dist/
+.env
+
+# Other files #
+*.log
+*.log.*
+
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*

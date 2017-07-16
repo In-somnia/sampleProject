@@ -1,0 +1,23 @@
+version 'unspecified'
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'application'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+jar {
+    baseName = 'server'
+    version = '0.1'
+}
+
+dependencies {
+    compile("org.springframework:spring-context:4.1.6.RELEASE")
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
